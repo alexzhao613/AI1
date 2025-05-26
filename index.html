@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10分でAIを体験！はじめての生成AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .container {
+            max-width: 800px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+        }
+        .step-number {
+            background-color: #3b82f6; /* Blue for step numbers */
+            color: #ffffff;
+            border-radius: 9999px; /* Fully rounded */
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+        .section-separator {
+            border-top: 1px dashed #cbd5e0; /* Light gray dashed line */
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="container mx-auto py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-4 leading-tight">
+                <span class="block text-indigo-600">10分でAIを体験！</span>
+                はじめての生成AI
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                AIってなんだか難しそう…そう思っていませんか？でも実は、誰でも簡単に使えるAIがあるんです！今日の教材では、「生成AI」というAIを使って、驚きの体験をしてみましょう。パソコンかスマホがあればOK。特別な知識は一切いりません。たった10分で、あなたの言葉からAIが新しいものを作り出してくれますよ！
+            </p>
+        </header>
+
+        <section class="card p-6 sm:p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-purple-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v16a1 1 0 01-2 0V2a1 1 0 011.3-.954zM7.142 4.137a1 1 0 011.142-.142l4 2a1 1 0 01.142 1.142l-2 4a1 1 0 01-1.142.142l-4-2a1 1 0 01-.142-1.142l2-4zM2 18a1 1 0 01-1-1V3a1 1 0 012 0v14a1 1 0 01-1 1z" clip-rule="evenodd"></path></svg>
+                今回使うAIツール
+            </h2>
+            <p class="text-gray-700 mb-4">
+                今回は、最も手軽に試せるAIツールの一つ、「<strong class="text-blue-600">ChatGPT</strong>」を使ってみましょう。Googleなどの検索エンジンで「ChatGPT」と検索して、公式サイト（<a href="https://chat.openai.com" target="_blank" class="text-blue-500 hover:underline">chat.openai.com</a>）にアクセスしてください。
+            </p>
+            <p class="text-gray-700">
+                ChatGPTは、アカウントを作成しなくても無料で使うことができます（モデルは「GPT-4o mini」というものが使えます）。アカウントを作成すると、より高性能な「GPT-4」なども使えるようになりますが、無料版では1時間あたりの利用回数に制限があります。今回はまず無料のアカウントなしでも使える範囲で試してみましょう。
+            </p>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <section class="card p-6 sm:p-8 mb-12 flex flex-col sm:flex-row items-start">
+            <div class="step-number mr-4 mb-4 sm:mb-0">1</div>
+            <div class="flex-grow">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">AIに「お願い」してみよう（約2分）</h2>
+                <p class="text-gray-700 mb-4">
+                    サイトを開くと、メッセージを入力する画面が出てきます。ここがAIとの会話のスタート地点です。
+                </p>
+                <p class="text-gray-700 mb-4">
+                    下の入力欄に、AIにやってほしいこと（質問やお願い）を書いてみましょう。難しく考えず、友達に話しかけるように書いてみてください。例えば…
+                </p>
+                <ul class="list-disc list-inside text-gray-700 ml-4 mb-4 space-y-2">
+                    <li>「面白い短い物語を作って」</li>
+                    <li>「犬が主役の童話を書いて」</li>
+                    <li>「今日の晩御飯の献立を考えて」</li>
+                    <li>「俳句を作って」</li>
+                    <li>「おすすめの旅行先を教えて」</li>
+                </ul>
+                <p class="text-gray-700 mb-4">
+                    これがAIへの「<strong class="text-green-600">指示</strong>」、または「<strong class="text-green-600">プロンプト</strong>」と呼ばれるものです。どんな言葉で指示するかによって、AIの答えが変わってきます。
+                </p>
+                <p class="text-gray-700">
+                    書き終わったら、入力欄の右にある送信ボタン（紙飛行機のマークなど）を押してください。
+                </p>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <section class="card p-6 sm:p-8 mb-12 flex flex-col sm:flex-row items-start">
+            <div class="step-number mr-4 mb-4 sm:mb-0">2</div>
+            <div class="flex-grow">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">AIが考えます（約1分）</h2>
+                <p class="text-gray-700">
+                    送信すると、AIがあなたの指示（プロンプト）を理解しようと動き出します。少しだけ待ちましょう。AIは、インターネット上のたくさんの情報を事前に学習しています。
+                </p>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <section class="card p-6 sm:p-8 mb-12 flex flex-col sm:flex-row items-start">
+            <div class="step-number mr-4 mb-4 sm:mb-0">3</div>
+            <div class="flex-grow">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">AIが作ったものを見てみよう！（約3分）</h2>
+                <p class="text-gray-700 mb-4">
+                    どうですか？AIがあなたの指示に合わせて文章を生成しましたね！
+                </p>
+                <p class="text-gray-700 mb-4">
+                    自分で書いた言葉から、AIがオリジナルの文章を作り出す。初めて体験すると、きっと「おお！」となるはずです。これが生成AIのすごいところです！ AIは、まるで人間が考えたかのように新しい文章を作り出すことができます。
+                </p>
+                <p class="text-gray-700 mb-4">
+                    例えば、短いお話を作ってもらったり、俳句を作ってもらったり。入力した言葉だけで、様々なものが瞬時に形になることに驚いたのではないでしょうか。
+                </p>
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-md" role="alert">
+                    <p class="font-bold">※ここで一つだけ注意点があります。</p>
+                    <p>AIが生成する情報は、たまに間違っていることもあります（これを「<strong class="text-red-600">ハルシネーション</strong>」と呼びます）。生成された情報をそのまま信じるのではなく、特に重要な情報の場合は自分で確認したり、「参考にする」という気持ちで使うのがAIを使う上でとても大切です。</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <section class="card p-6 sm:p-8 mb-12 flex flex-col sm:flex-row items-start">
+            <div class="step-number mr-4 mb-4 sm:mb-0">4</div>
+            <div class="flex-grow">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">もっとAIと会話してみよう！（約3分）</h2>
+                <p class="text-gray-700 mb-4">
+                    AIは、前の会話の内容を覚えています。だから、続けて質問したり、お願いしたりすることができます。
+                </p>
+                <ul class="list-disc list-inside text-gray-700 ml-4 mb-4 space-y-2">
+                    <li>さっきAIが作った物語に、「その後の展開を教えて」と聞いたり…</li>
+                    <li>献立に「その中でおすすめのレシピは？」と質問したり…</li>
+                    <li>おすすめされた旅行先について、「その場所の観光スポットは？」と質問したり…</li>
+                </ul>
+                <p class="text-gray-700">
+                    AIは、あなたの追加の質問にも応えてくれます。まるで友達と話しているみたいですね！このようにAIと対話しながら、より詳細な情報やアイデアを引き出すことも可能です。
+                </p>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <section class="card p-6 sm:p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-teal-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                おわりに（約1分）
+            </h2>
+            <p class="text-gray-700 mb-4">
+                どうでしたか？たった10分で、AIを使って文章を作ったり、会話を楽しんだりすることができましたね！
+            </p>
+            <p class="text-gray-700 mb-4">
+                今日体験した「生成AI」は、文章だけでなく、絵や音楽、動画なども作ることができます。画像生成AIを使えば、絵を描く知識がなくても、言葉の指示だけでオリジナルのイラストを作り出すことも可能です。
+            </p>
+            <p class="text-gray-700 mb-4">
+                AIは、私たちのアイデアを形にしたり、普段の作業を助けてくれたり、新しい発見をもたらしてくれたり と、様々な可能性を秘めています。AIをうまく活用することは、作業時間を大幅に短縮したり、コストを削減したり、コンテンツの質を向上させたりすることにもつながります。
+            </p>
+            <p class="text-gray-700">
+                今日の体験をきっかけに、ぜひ色々な生成AIツールを試して、あなたの毎日をもっと豊かにしてみてください！
+            </p>
+        </section>
+    </div>
+</body>
+</html>
